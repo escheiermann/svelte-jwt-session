@@ -2,7 +2,12 @@
   "name": "svelte-jwt-session",
   "version": "0.0.0",
   "description": "Simple session management with JSON Web Tokens for the Svelte Framework.",
-  "scripts": {},
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --config ./config/jest.config.js",
+    "test:coverage": "npm test -- --coverage",
+    "lint": "npx eslint src/**"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/escheiermann/svelte-jwt-session.git"
